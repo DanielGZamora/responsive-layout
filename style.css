@@ -1,0 +1,106 @@
+/*Moviles*/
+@media (max-width: 600px) {
+    .header {
+        display: grid;
+        background-color: rgb(58, 65, 49);
+        border: 1px solid #333;
+        grid-template-areas:
+            'logo logo'
+            'title title';
+    }
+    .logo {
+        grid-area: logo;
+        border: 1px solid #333;
+        top: 30px;
+        left: 30px;
+    }
+    .conteinter{
+        background-color: rgb(186, 149, 97);
+        border: 1px solid #333;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-areas:
+            'right right right right right'
+            'left left table left left';
+    }
+    .left{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(186, 149, 97);
+    }
+    .table{
+        grid-area: table;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(34, 100, 157);
+        border: 1px solid #333;
+
+    }
+
+}
+/*Tablets*/
+@media (max-width: 800px) {
+    .header {
+        display: grid;
+        background-color: rgb(58, 65, 49);
+        border: 1px solid #333;
+        grid-template-areas:
+            'logo logo'
+            'title title';
+    }
+
+    .logo {
+        grid-area: logo;
+        border: 1px solid #333;
+        top: 30px;
+        left: 30px;
+    }
+
+    .title {
+        grid-area: title;
+        background-color: blanchedalmond;
+
+    }
+    .conteinter{
+        background-color: rgb(186, 149, 97);
+        border: 1px solid #333;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+}
+/*portatiles*/
+@media (min-width:800px) {
+    .header {
+        display: grid;
+        background-color: rgb(58, 65, 49);
+        border: 1px solid #333;
+        grid-template-areas:
+            'logo title title';
+    }
+    
+    .logo {
+        grid-area: logo;
+        border: 1px solid #333;
+        top: 30px;
+        left: 30px;
+    }
+    
+    .title {
+        grid-area: title;
+        background-color: rgb(58, 65, 49);
+    
+    }
+    .conteinter{
+        background-color: rgb(63, 35, 189);
+        border: 1px solid #333;
+        display: grid;
+        grid-template-areas:
+        'right right right right right'
+        'left left toptable left left'
+        'left left table left left';
+    }
+    
+}
