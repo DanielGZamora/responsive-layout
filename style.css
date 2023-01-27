@@ -34,9 +34,7 @@
         grid-area: table;
         align-items: center;
         justify-content: center;
-        background-color: rgb(34, 100, 157);
-        border: 1px solid #333;
-
+        background-color: rgb(187, 187, 187);
     }
 
 }
@@ -70,6 +68,10 @@
         align-items: center;
         justify-content: center;
     }
+       .table{
+        grid-area: table;
+        background-color: rgb(187, 187, 187);
+    }
 }
 /*portatiles*/
 @media (min-width:800px) {
@@ -83,7 +85,6 @@
     
     .logo {
         grid-area: logo;
-        border: 1px solid #333;
         top: 30px;
         left: 30px;
     }
@@ -94,13 +95,15 @@
     
     }
     .conteinter{
-        background-color: rgb(63, 35, 189);
-        border: 1px solid #333;
+        background-color: rgb(186, 149, 97);
         display: grid;
         grid-template-areas:
-        'right right right right right'
-        'left left toptable left left'
-        'left left table left left';
+        'right table'
+        'photo table';
+    }
+    .table{
+        grid-area: table;
+        background-color: rgb(187, 187, 187);
     }
     
 }
